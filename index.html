@@ -10,8 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- End point add bootstrap's CSSStyle  add -->
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="./styles.css">
     <style id="gatsby-inlined-css">
 
@@ -315,25 +317,179 @@
       padding-bottom: 50px;
       color: #525f7f
   }
+
+  * Education section styling */
+  #educations {
+      background-color: #f4f4f4;
+      padding: 40px 0;
+      text-align: center;
+  }
+
+  .section-title {
+      color: #333333;
+      font-size: 2em;
+      margin-bottom: 30px;
+  }
+
+  .section-divider {
+      border: 1px solid #dddddd;
+      margin: 20px 0;
+  }
+
+  .education-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .education-list {
+      max-width: 800px;
+      width: 100%;
+  }
+
+  .education-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      text-decoration: none;
+      color: #333333;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+  }
+
+  .education-item:hover {
+      background-color: #f9f9f9;
+  }
+
+  .education-logo {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 10px;
+  }
+
+  .education-details {
+      text-align: center;
+  }
+
+  .education-subtitle {
+      margin: 0;
+      opacity: 0.75;
+  }
+
+  .education-dates {
+      margin-top: 10px;
+      color: #777777;
+  }
+
+/* Hero section styling */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3em;
+    color: #747fe0;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    color: #525f7f;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#projects {
+  background-color: #fff; /* Set the background color of the projects section */
+  padding: 80px 0; /* Adjust the padding for better spacing */
+}
+
+.text-center.mb-5 {
+  color: #333333;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* Project cards styling */
+.card {
+  border: none;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* Add a border at the bottom */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: #4200ff;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #3300cc;
+}
+
+.text-muted {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 10px;
+
+}
   </style>
 </head>
 <body>
-        <!---Nav-Bar--->
-            <section id="navbar">
-                  <header class="py-3 mb-4 border-bottom">
-                    <div class="container d-flex flex-wrap justify-content-center">
-                      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bounding-box" viewBox="0 0 16 16">
-                            <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"/>
-                          </svg>
-                        <span class="fs-4 "> -Ben_G-</span>
-                      </a>
-                      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                      </form>
-                    </div>
-                  </header>
-            </section>
+<!---Nav-Bar--->
+<section id="navbar">
+  <header class="py-3 mb-4">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+          <!-- Custom Icon (Larger Size) -->
+          <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 link-body-emphasis text-decoration-none">
+              <img src="img/bengi-icon1.png" alt="Ben_G Icon" width="300" height="194" class="me-2">
+          </a>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+      </div>
+  </header>
+</section>
+
+
+
+
+
+
+
 
             <div class="hero-container" data-reactid="9">
               <div class="hero-title" data-reactid="10"><!-- react-text: 11 -->Ben_G<!-- /react-text -->
@@ -397,55 +553,55 @@
         <!-- End point About me -->
 
         <!-- Educations -->
-<section id="Educations">
-  <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 mb-0 align-items-center justify-content-center">
-    <div class="list-group">
-      <h4 class="display-5 fw-medium text-body-emphasis mb-5">Educations</h4><br>
-      
-      <!-- University Education -->
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="img/mfu.png" alt="Mae Fah Luang University" width="32" height="32" class="me-3">
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">University</h6>
-            <p class="mb-0 opacity-75">Software Engineering</p>
-            <p><strong>Mae Fah Luang University</strong></p>
+        <section id="educations">
+          <div class="education-container">
+            <div class="education-list">
+              <h4 class="section-title">Educations</h4>
+              
+              <!-- University Education -->
+              <a href="#" class="education-item" aria-current="true">
+                <img src="img/mfu.png" alt="Mae Fah Luang University" class="education-logo">
+                <div class="education-details">
+                  <h6>University</h6>
+                  <p class="education-subtitle">Software Engineering</p>
+                  <p class="education-institution"><strong>Mae Fah Luang University</strong></p>
+                </div>
+                <div class="education-dates">
+                  <small>2022 - Now</small>
+                </div>
+              </a>
+        
+              <!-- High School Education -->
+              <a href="#" class="education-item" aria-current="true">
+                <img src="img/damrong.png" alt="Damrongratsongkroh School" class="education-logo">
+                <div class="education-details">
+                  <h6>High School</h6>
+                  <p class="education-subtitle">Math-Science-Computer</p>
+                  <p class="education-institution"><strong>Damrongratsongkroh School</strong></p>
+                </div>
+                <div class="education-dates">
+                  <small>2019</small>
+                </div>
+              </a>
+        
+              <!-- Junior School Education -->
+              <a href="#" class="education-item" aria-current="true">
+                <img src="img/cvk.png" alt="ChaingraiVidtayahkhom School" class="education-logo">
+                <div class="education-details">
+                  <h6>Junior High School</h6>
+                  <p class="education-subtitle">Default / Standard</p>
+                  <p class="education-institution"><strong>Chaingrai Vidtayahkhom School</strong></p>
+                </div>
+                <div class="education-dates">
+                  <small>2016</small>
+                </div>
+              </a>
+            </div>
           </div>
-          <small class="opacity-50 text-nowrap">2022</small>
-          <small class="opacity-50 text-nowrap">Now</small>
-        </div>
-      </a>
-
-      <!-- High School Education -->
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="img/damrong.png" alt="Damrongratsongkroh School" width="32" height="32" class="me-3">
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">High School</h6>
-            <p class="mb-0 opacity-75">Math-Science-Computer</p>
-            <p><strong>Damrongratsongkroh School</strong></p>
-          </div>
-          <small class="opacity-50 text-nowrap">2019</small>
-        </div>
-      </a>
-
-      <!-- Junior School Education -->
-      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="img/cvk.png" alt="ChaingraiVidtayahkhom School" width="32" height="32" class="me-3">
-        <div class="d-flex gap-2 w-100 justify-content-between">
-          <div>
-            <h6 class="mb-0">Junior High School</h6>
-            <p class="mb-0 opacity-75">Default / Standard</p>
-            <p><strong>Chaingrai Vidtayahkhom School</strong></p>
-          </div>
-          <small class="opacity-50 text-nowrap">2016</small>
-        </div>
-      </a>
-    </div>
-  </div>
-  <hr class="mb-5">
-</section>
-<!-- End of Educations -->
+          <hr class="section-divider">
+        </section>
+        <!-- End Education Section-->
+        
 <!-- Project Section -->
 <section id="projects">
   <div class="container">
