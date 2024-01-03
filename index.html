@@ -407,90 +407,65 @@
     margin: 0 auto;
 }
 
+/* Add this to your existing CSS file or create a new one */
+
+/* Add this to your existing CSS file or create a new one */
+
+/* Project Section Styles */
 #projects {
-  background-color: #fff; /* Set the background color of the projects section */
-  padding: 80px 0; /* Adjust the padding for better spacing */
+  padding: 80px 0;
 }
 
-.text-center.mb-5 {
-  color: #333333;
-  font-size: 2.5em;
-  margin-bottom: 30px;
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+  color: #333;
 }
 
-/* Project cards styling */
+.row {
+  margin: 0 -15px;
+}
+
 .card {
   border: none;
-  transition: box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
 }
 
 .card:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
-  width: 100%; /* Make the image fill the container */
-  height: auto; /* Maintain aspect ratio */
-  border-bottom: 1px solid #ddd; /* Add a border at the bottom */
-}
-
-.card-body {
-  padding: 20px;
+  height: 200px; /* Set a fixed height for all card images */
+  object-fit: cover; /* Ensure the image covers the fixed height */
+  border-bottom: 1px solid #ddd;
 }
 
 .card-title {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-top: 15px;
 }
 
 .card-text {
-  font-size: 1em;
   color: #555;
-  line-height: 1.6;
 }
 
 .btn-primary {
-  background-color: #4200ff;
+  background-color: #50b4f3fe;
   border: none;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #3300cc;
+  background-color: #05419d;
 }
 
-.text-muted {
-  font-size: 0.9em;
-  color: #888;
-  margin-top: 10px;
-
-}
   </style>
 </head>
 <body>
-<!---Nav-Bar--->
-<!-- <section id="navbar">
-    <header class="py-3 mb-4">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center">
-            <!-- Custom Icon (Larger Size) -->
-            <!-- <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 link-body-emphasis text-decoration-none">
-              <img src="img/bengi-icon1.png" alt="Ben_G Icon" width="350" height="133" class="me-2">
-            </a>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-            </form>
-        </div>
-    </header>
-</section> --> -->
-
-<!-- Custom image icon -->
-
-
-
-
-
-
             <!-- About me -->
 <section id="aboutme">
   <!-- ... (Existing content) ... -->
@@ -504,13 +479,11 @@
           I am a Software Engineering Student, 2nd Year at Mae Fah Luang.
           <br data-reactid="15">
           <!-- react-text: 16 -->Check out my<!-- /react-text -->
-          <!-- react-text: 17 --> <!-- /react-text -->
           <a href="#projects" data-reactid="18">side-projects</a> below.
       </div>
   </div>
+
 </section>
-
-
         <!-- About me -->
         <section id="aboutme">
           <div class="overflow-hidden" style="max-height: 300vh;">
@@ -621,11 +594,10 @@
   <div class="container">
     <h2 class="section-title">My Projects</h2>
 
-    <!-- Project Row-1 -->
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
       <!-- Project Card 1 -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
+      <div class="col">
+        <div class="card h-100">
           <img src="img/project1.png" class="card-img-top" alt="Portfolio">
           <div class="card-body">
             <h5 class="card-title">Portfolio</h5>
@@ -639,9 +611,9 @@
       </div>
 
       <!-- Project Card 2 -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <img src="img/Side-Project.png" class="card-img-top" alt="Project 2">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/Side-Project.png" class="card-img-top" alt="Shabu Order System">
           <div class="card-body">
             <h5 class="card-title">Shabu Order System (OOP)</h5>
             <p class="card-text">This's a side project that I created for fun on the first year.</p>
@@ -649,15 +621,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- End of Project Row-1 -->
 
-    <!-- Project Row-2 -->
-    <div class="row">
       <!-- Project Card 3 -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <img src="img/project2.png" class="card-img-top" alt="Project 2">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/project2.png" class="card-img-top" alt="Forecast Weather (Spring boot)">
           <div class="card-body">
             <h5 class="card-title">Forecast Weather (Spring boot)</h5>
             <p class="card-text">This's a project on Web Application Development. So I'm building this using RestAPI on Spring Boot with Thymeleaf frontend and API Current, Forecast from OpenWeatherAPI, and Air Quality from Ninja API RapidAPI.</p>
@@ -667,11 +635,11 @@
       </div>
 
       <!-- Project Card 4 -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <img src="img/project3.png" class="card-img-top" alt="Project 2">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/project3.png" class="card-img-top" alt="Dentist Appointment & Management">
           <div class="card-body">
-            <h5 class="card-title">Dentist Appointment & Management (Spring Boot + Flutter + React)</h5>
+            <h5 class="card-title">Dentist Appointment & Management (Spring Boot + Flutter)</h5>
             <p class="card-text">This is my side project currently in development. I am working solo on this project, using a rest API to store patients and appointments in a database for clinics or hospitals. The system allows doctors to manage patients and select categories based on their preferences.</p>
             <a href="https://github.com/6531503042/Dentist_Mobile_Project.git" class="btn btn-primary" target="_blank">GitHub Repo</a>
             <p class="text-muted">Note: This project is still in the implementation phase.</p>
@@ -679,14 +647,9 @@
         </div>
       </div>
     </div>
-    <!-- End of Project Row-2 -->
-
   </div>
 </section>
 <!-- End of Project Section -->
-
-
-
 
         <!-- Footer -->
         <div class="background" data-reactid="200"></div>
@@ -704,12 +667,8 @@
         </div>
         <div class="footer" data-reactid="209">
             <span data-reactid="210">
-            <!-- react-text: 211 -->
             Made by Ben_G © 
-            <!-- /react-text -->
-            <!-- react-text: 212 -->
             2022
-            <!-- /react-text -->
             </span>
         </div>
     </div>
@@ -721,6 +680,56 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  </script>
+    <script src="MatrixRain.js"></script>
+ <!-- Add this to the end of your HTML body or create a new JavaScript file -->
+
+<script>
+  // Optional: Add this script if you want to dynamically adjust card heights for a uniform appearance
+  // It requires jQuery
+
+  $(document).ready(function () {
+    // Get the maximum height among all project cards
+    var maxHeight = 0;
+    $('.card').each(function () {
+      var cardHeight = $(this).height();
+      maxHeight = Math.max(maxHeight, cardHeight);
+    });
+
+    // Set the maximum height for all project cards
+    $('.card').height(maxHeight);
+  });
+
+  // Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+// Scroll animation for elements
+window.addEventListener('scroll', function () {
+  // Add your animation logic here
+});
+
+var matrixRain = new MatrixRain({
+  canvas: document.getElementById('canvas'),
+  tickInterval: 20, // lower numbers mean faster animations
+  drops: {
+      count: 500,
+      speed: 500, // lower numbers mean faster falling drops
+      color: '#00ff00', // green color for the falling drops
+      width: 2 // width of the falling drops
+  }
+});
+
+matrixRain.start();
+
+
+</script>
+
 </body>
 </html>
